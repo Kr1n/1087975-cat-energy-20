@@ -1,0 +1,32 @@
+.special{
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  padding-top: 27px;
+}
+
+.special__header{
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $text-black;
+  margin: 0;
+  padding: 0;
+}
+
+.special__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  padding-top: 38px;
+}
+
+.special__item{
+  padding-left: 80px;
+  min-height: 60px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special_dark-grey;
+}

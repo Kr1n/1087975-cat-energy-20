@@ -1,0 +1,42 @@
+.intro{
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  background: url("../img/index-background-mobile.png") center 0 no-repeat;
+}
+
+.intro__header{
+  background-color: $basic-green;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $text-white;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.intro__text{
+  background-color: $basic-green;
+  margin: 0;
+  padding: 0;
+  color: $text-white;
+  text-align: center;
+}
+
+.intro__link{
+  background-color: $basic-green;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-white;
+  display: block;
+  padding-top: 11px;
+  padding-bottom:11px;
+  margin-top: 300px;
+}

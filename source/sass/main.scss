@@ -1,0 +1,53 @@
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  position: relative;
+  box-sizing: border-box;
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.hidden{
+  display: none;
+}
+
+@-webkit-keyframes bounce{
+  0%    {transform: translateY(-2000px);}
+  70%   {transform: translateY(30px);}
+  90%   {transform: translateY(-10px);}
+  100%  {transform: translateY(0);}
+}
+
+@keyframes bounce{
+  0%    {transform: translateY(-2000px);}
+  70%   {transform: translateY(30px);}
+  90%   {transform: translateY(-10px);}
+  100%  {transform: translateY(0);}
+}
+
+.popup-animation-apear{
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
