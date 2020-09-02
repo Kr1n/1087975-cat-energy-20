@@ -1,5 +1,5 @@
 .form{
-
+  padding-bottom: 32px;
 }
 
 .form__header{
@@ -8,6 +8,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   padding-bottom: 39px;
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
@@ -27,46 +28,78 @@
     border-bottom: 1px solid $border-color-socials;
     font-size: 16px;
     line-height: 18px;
+    padding-bottom: 24px;
   }
 
   &--service{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 26px;
     border-bottom: 1px solid $border-color-socials;
     color: $special_dark-grey-2;
+    display: grid;
+    row-gap: 15px;
   }
 
   &--contact{
     border-bottom: 1px solid $border-color-socials;
+    padding-bottom: 24px;
+  }
+
+  &--comment{
+
   }
 }
 
 .form__wrapper{
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  column-gap: 15px;
   padding-bottom: 15px;
   align-items: center;
+  position: relative;
+
+  &:nth-last-of-type(1){
+    padding-bottom: 0;
+  }
+
+  .form__fieldset--general &{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 15px;
+  }
+
+  .form__fieldset--contact &{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 15px;
+  }
 }
 
 .form__input{
   border: 1px solid $border-color-form;
-  width: 100%;
+  padding: 0;
+  margin: 0;
   padding-left: 15px;
   padding-top: 13px;
   padding-bottom: 13px;
+  box-sizing: border-box;
+  position: relative;
 
   &::placeholder{
     color: inherit;
     text-transform: uppercase;
   }
+
+  .form__fieldset--contact &{
+    padding-right: 40px;
+  }
 }
 
 .form__descrition{
+  margin: 0;
+  padding: 0;
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
   color: $text-black;
+  margin-top: 27px;
+  margin-bottom: 33px;
 }
 
 .form__textarea{
@@ -74,8 +107,10 @@
   width: 100%;
   padding-top: 13px;
   padding-bottom: 13px;
+  padding-left: 15px;
   resize: none;
   min-height: 150px;
+  box-sizing: border-box;
 
   &::placeholder{
     color: inherit;
@@ -103,4 +138,108 @@
   margin-top: 13px;
   margin-bottom: 25px;
   width: 100%;
+}
+
+.form__label{
+  display: block;
+  position: relative;
+
+
+
+  .form__fieldset--service &{
+    padding-left: 45px;
+    margin-bottom: 15px;
+  }
+
+  .form__fieldset--service &::before{
+    position: absolute;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $special-grey;
+    left: 0;
+    top: calc(50% - 15px);
+  }
+
+  .form__fieldset--service input:checked ~ &::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 13.5px;
+    height: 13.5px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    left: 8px;
+    top: calc(50% - 7px);
+  }
+
+  .form__fieldset--addition &{
+    padding-left: 45px;
+    margin-bottom: 27px;
+  }
+
+  .form__fieldset--addition &::before{
+    position: absolute;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-grey;
+    left: 0;
+    top: calc(50% - 15px);
+  }
+
+  .form__fieldset--addition input:checked + &::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 8px;
+    border-left: 2px solid $basic-green;
+    border-bottom: 2px solid $basic-green;
+    transform: rotate(-45deg);
+    left: 6px;
+    top: calc(50% - 7px);
+  }
+}
+
+.form__legend{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__input-icon{
+  position: absolute;
+  color: $special_dark-grey-2;
+
+  &--phone{
+    right: 12px;
+    top: 13px;
+  }
+
+  &--email{
+    right: 15px;
+    top: 16px;
+  }
+
+  .form__input:active ~ &{
+    color: $basic-green;
+  }
+
+  .form__input:focus ~ &{
+    color: $basic-green;
+  }
+
+  .form__input:invalid ~ &{
+    color: $status-error;
+  }
 }

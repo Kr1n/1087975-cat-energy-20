@@ -8,5 +8,10 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 33px;
+}
+
+.social__img{
+  color: $special-grey-2;
 }

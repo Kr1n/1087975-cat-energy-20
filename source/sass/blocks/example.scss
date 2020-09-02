@@ -61,3 +61,20 @@
   padding-left: 14px;
   padding-right: 14px;
 }
+
+.example__img-wrapper{
+  position: relative;
+  min-height: 230px;
+  min-width: 307px;
+  box-sizing: border-box;
+}
+
+.example__image{
+  display: block;
+  position: absolute;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+}

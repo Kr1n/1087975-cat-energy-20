@@ -19,6 +19,7 @@
 
 .catalog__image{
   grid-row: 1 / 3;
+  background-color: $special-grey;
 }
 
 .catalog__button{
@@ -41,9 +42,10 @@
 .catalog__more{
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
-  padding-top: 79px;
+  padding-top: 26px;
   padding-bottom: 25px;
   border-bottom: 1px solid $special_grey;
+  text-align: center;
 }
 
 .catalog__text{
@@ -54,20 +56,25 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+  padding-right: 50px;
+
 }
 
-.catalog__text{
-  text-align: center;
+.catalog__more-text{
   margin: 0;
   padding: 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
 
   &--smaller{
+    font-family: "Arial", sans-serif;
     font-size: 12px;
     line-height: 16px;
     padding-top: 8px;
+    text-transform: none;
   }
 }
 
@@ -85,4 +92,15 @@
   padding-top: 11px;
   padding-bottom:11px;
   margin-top: 13px;
+}
+
+.catalog__more-icon{
+  text-align: center;
+  padding-bottom: 23px;
+  display: none;
+  color: $offer-icon-color;
+
+  &--mobile{
+    display: inline;
+  }
 }

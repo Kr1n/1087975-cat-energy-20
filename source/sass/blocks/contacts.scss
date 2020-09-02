@@ -35,9 +35,13 @@
 }
 
 .contacts__map{
-  background-color: red;
-  padding: 50px;
   margin-left: -$padding-mobile;
   margin-right: -$padding-mobile;
   grid-column: 1 / -1;
+  line-height: 0;
+}
+
+.contacts__map-frame{
+  border: 0;
+  width: 100%;
 }

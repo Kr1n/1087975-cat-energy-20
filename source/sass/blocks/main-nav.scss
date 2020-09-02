@@ -1,9 +1,14 @@
 .main-nav__toggle{
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   display: block;
-  min-height: 65px;
   box-sizing: border-box;
   width: 50px;
+  height: 65px;
+  border: 0;
+  background-color: transparent;
+  text-align: center;
 }
 
 .main-nav__list{
@@ -50,4 +55,24 @@
   min-height: 65px;
   text-transform: uppercase;
   box-sizing: border-box;
+}
+
+.main-nav__toggle-cross{
+  .main-nav--closed &{
+    display: none;
+  }
+
+  .main-nav--opened &{
+    display: block;
+  }
+}
+
+.main-nav__toggle-burger{
+  .main-nav--closed &{
+    display: block;
+  }
+
+  .main-nav--opened &{
+    display: none;
+  }
 }

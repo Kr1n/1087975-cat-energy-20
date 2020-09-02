@@ -1,7 +1,7 @@
 .offer{
   padding: 0;
   margin: 0;
-  padding-top: 186px;
+  padding-top: 58px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: $basic-green;
@@ -11,13 +11,36 @@
   margin-right: $padding-mobile;
   margin-top: 39px;
   margin-bottom: 35px;
+  text-align: center;
+
+  background:
+    url("../img/other/gift-photo-mobile@1x.jpg") center top no-repeat,
+    url("../img/other/gift-photo-mobile@1x.jpg") center top no-repeat;
+  background-size: contain;
+  height: auto;
+
+  @media (min-resolution: 2dppx){
+    background:
+    url("../img/other/gift-photo-mobile@2x.jpg") center top no-repeat,
+    url("../img/other/gift-photo-mobile@2x.jpg") center top no-repeat;
+    background-size: contain;
+  }
 }
 
 .offer__header{
+  margin: 0;
+  padding: 0;
   font-weight: normal;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $text-white;
-  text-align: center;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.offer__img{
+  padding-bottom: 48px;
+  color: $text-white;
 }

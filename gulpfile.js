@@ -113,7 +113,7 @@ exports.compress = compress;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
@@ -133,8 +133,8 @@ const watcher = () => {
 
 exports.build = gulp.series(
   clean, webp, html, compress, copy, styles, sprite
-  );
+);
 
 exports.default = gulp.series(
-  styles, server, watcher
-  );
+  styles, sprite, server, watcher
+);

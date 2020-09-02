@@ -2,6 +2,7 @@
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
   padding-top: 27px;
+  padding-bottom: 42px;
 }
 
 .special__header{
@@ -23,10 +24,64 @@
 }
 
 .special__item{
+  font-family: "Arial", sans-serif;
   padding-left: 80px;
   min-height: 60px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+
+  }
+
+  &--leaf::before{
+    background: $basic-green url("../img/advantage/advantage-leaf@1x.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  &--clock::before{
+    background: $basic-green url("../img/advantage/advantage-clock@1x.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  &--dining::before{
+    background: $basic-green url("../img/advantage/advantage-dining@1x.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  &--powder::before{
+    background: $basic-green url("../img/advantage/advantage-powder@1x.png") center center no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-resolution: 2dppx){
+    &--leaf::before{
+      background: $basic-green url("../img/advantage/advantage-leaf@2x.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--clock::before{
+      background: $basic-green url("../img/advantage/advantage-clock@2x.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--dining::before{
+      background: $basic-green url("../img/advantage/advantage-dining@2x.png") center center no-repeat;
+      background-size: cover;
+    }
+
+    &--powder::before{
+      background: $basic-green url("../img/advantage/advantage-powder@2x.png") center center no-repeat;
+      background-size: cover;
+    }
+  }
 }

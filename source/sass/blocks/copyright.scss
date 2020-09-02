@@ -1,6 +1,7 @@
 .copyright{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   column-gap: 33px;
 }
 
@@ -12,4 +13,8 @@
   font-size: 16px;
   line-height: 18px;
   color: $special_dark-grey;
+}
+
+.copyright__link{
+  color: $special-grey-2;
 }
