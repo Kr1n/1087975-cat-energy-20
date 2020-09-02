@@ -235,11 +235,11 @@
     color: $basic-green;
   }
 
-  .form__input:focus ~ &{
-    color: $basic-green;
-  }
-
   .form__input:invalid ~ &{
     color: $status-error;
+  }
+
+  .form__input:focus ~ &{
+    color: $basic-green;
   }
 }
