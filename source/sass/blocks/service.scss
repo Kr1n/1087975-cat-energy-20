@@ -16,7 +16,17 @@
   background-color: $basic_grey;
   padding-left: 20px;
   padding-right: 30px;
+  padding-top: 30px;
   position: relative;
+
+  @media (min-width: $tablet-width){
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: auto auto auto;
+    padding-left: 52px;
+    padding-top: 77px;
+    padding-bottom: 53px;
+  }
 }
 
 .service__header{
@@ -28,9 +38,15 @@
   text-transform: uppercase;
   text-align: left;
   color: $text-black;
-  padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 75px;
+
+  @media (min-width: $tablet-width){
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    padding-bottom: 24px;
+  }
 }
 
 .service__text{
@@ -42,6 +58,11 @@
   margin: 0;
   padding: 0;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .service__link{
@@ -54,21 +75,18 @@
   padding-top: 15px;
   padding-bottom: 15px;
   border-top: 1px solid $border-color-service;
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 30px;
+    border: 0;
+    padding-top: 48px;
+    padding-bottom: 0;
+  }
 }
 
 .service__icon{
   position: absolute;
-
-  &::after{
-    content: "";
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    background-color: $basic-green;
-    padding: 10px;
-  }
 
   &--pro{
     left: 13px;
@@ -78,6 +96,21 @@
   &--slim{
     left: 29px;
     top: 21px;
+  }
+
+  @media (min-width: $tablet-width){
+    grid-row: 1/-1;
+    grid-column: 2/3;
+    position: relative;
+    height: auto;
+
+    &--slim{
+      width: 200px;
+    }
+
+    &--pro{
+      width: 268px;
+    }
   }
 }
 

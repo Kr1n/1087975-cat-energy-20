@@ -12,6 +12,11 @@
   color: $text-black;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width){
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .special__list{
@@ -21,17 +26,26 @@
   display: grid;
   gap: 20px;
   padding-top: 38px;
+  counter-reset: count;
+
+  @media (min-width: $tablet-width){
+    grid-template-columns: 1fr 1fr;
+    padding-top: 32px;
+    gap: 37px;
+  }
 }
 
 .special__item{
   font-family: "Arial", sans-serif;
   padding-left: 80px;
+  padding-right: 85px;
   min-height: 60px;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
   position: relative;
+  counter-increment: count;
 
   &::before{
     content: "";
@@ -40,7 +54,35 @@
     height: 60px;
     left: 0;
     top: 0;
+  }
 
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 0;
+    padding-top: 151px;
+    min-height: 280px;
+    box-sizing: border-box;
+
+
+    &::before{
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+
+    &::after{
+      font-family: "Oswald", "Arial", sans-serif;
+      position: absolute;
+      content: counter(count);
+      font-weight: normal;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
   }
 
   &--leaf::before{

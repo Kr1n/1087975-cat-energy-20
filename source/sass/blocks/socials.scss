@@ -10,8 +10,28 @@
   justify-content: center;
   align-items: center;
   column-gap: 33px;
+
+  @media (min-width: $tablet-width){
+    border: 0;
+    padding: 0;
+  }
 }
 
 .social__img{
   color: $special-grey-2;
+
+  &--vk{
+    width: 30px;
+    height: 22px;
+  }
+
+  &--insta{
+    width: 23px;
+    height: 23px;
+  }
+
+  &--fb{
+    width: 28px;
+    height: 33px;
+  }
 }

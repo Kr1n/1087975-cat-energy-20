@@ -16,6 +16,12 @@
   min-height: 56px;
   padding-top: 12px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width){
+    font-size: 30px;
+    line-height: 37px;
+    min-height: 77px;
+  }
 }
 
 .parameter__value{
@@ -33,4 +39,11 @@
   margin-top: -12px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width){
+    background-color: $text-white;
+    width: auto;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
