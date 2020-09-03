@@ -7,4 +7,7 @@
   left: 20px;
   top: 10px;
 
+  @media (min-width: $tablet-width){
+    top: 19px;
+  }
 }

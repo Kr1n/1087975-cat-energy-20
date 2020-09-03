@@ -2,16 +2,23 @@
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
   background:
-    url("../img/other/index-can-mobile@1x.png") center 190px no-repeat,
-    url("../img/other/index-background-mobile@1x.jpg") center top no-repeat;
+  url("../img/other/index-can-mobile@1x.png") center 190px no-repeat,
+  url("../img/other/index-background-mobile@1x.jpg") center top no-repeat;
   background-size: auto, contain;
   height: auto;
 
   @media (min-resolution: 2dppx){
     background:
-      url("../img/other/index-can-mobile@2x.png") center 190px no-repeat,
-      url("../img/other/index-background-mobile@2x.jpg") center top no-repeat;
+    url("../img/other/index-can-mobile@2x.png") center 190px no-repeat,
+    url("../img/other/index-background-mobile@2x.jpg") center top no-repeat;
     background-size: auto, contain;
+  }
+
+  @media (min-width: $tablet-width){
+    background: url("../img/other/index-can-tablet@1x.jpg") bottom no-repeat;
+    background-size: auto;
+    padding-left: $padding-tablet + 87px;
+    min-height: 872px;
   }
 }
 
@@ -24,9 +31,20 @@
   margin: 0;
   padding: 0;
   padding-top: 27px;
-  padding-bottom: 25px;
+  padding-bottom: 41px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media (min-width: $tablet-width){
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: $text-black;
+    padding-top: 62px;
+    padding-right: 150px;
+    padding-left: 0;
+    text-align: left;
+  }
 }
 
 .intro__text{
@@ -34,6 +52,15 @@
   padding: 0;
   color: $text-white;
   text-align: center;
+
+  @media (min-width: $tablet-width){
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: $text-black;
+    text-align: left;
+    text-transform: uppercase;
+  }
 }
 
 .intro__link{
@@ -48,4 +75,13 @@
   padding-top: 11px;
   padding-bottom:11px;
   margin-top: 350px;
+
+  @media (min-width: $tablet-width){
+    font-weight: normal;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom:14px;
+    width: 244px;
+    margin-top: 49px;
+  }
 }
