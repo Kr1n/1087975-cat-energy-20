@@ -6,9 +6,10 @@
   background-color: $background-example;
 
   @media (min-width: $tablet-width){
-    border: 1px solid $border-color;
+    border-top: 1px solid $border-color;
     background-color: transparent;
     padding-top: 43px;
+    padding-bottom: 0;
   }
 }
 
@@ -83,11 +84,35 @@
 
 .example__images{
   text-align: center;
+
+  @media (min-width: $tablet-width){
+    position: relative;
+    min-height: 462px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &::before{
+      content: "";
+      position: absolute;
+      width: 120%;
+      height: 462px;
+      background-color: $background-example;
+      left: 0;
+      margin-left: -$padding-tablet;
+      z-index: -1;
+    }
+  }
 }
 
 .example__control{
   padding-top: 23px;
   text-align: center;
+
+  @media (min-width: $tablet-width){
+    padding-top: 0px;
+    padding-bottom: 67px;
+  }
 }
 
 .example__control-text{
@@ -114,4 +139,11 @@
   margin-left: auto;
   left: 0;
   right: 0;
+
+  @media (min-width: $tablet-width){
+    min-width: 708px;
+    height: auto;
+    margin-top: -170px;
+
+  }
 }

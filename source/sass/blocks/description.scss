@@ -6,6 +6,15 @@
   padding-top: 18px;
   color: $special_dark-grey;
   margin: 0;
+
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.description__text{
+
 }
 
 .description__value{
@@ -16,4 +25,9 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 6px;
+
+  @media (min-width: $tablet-width){
+    border-bottom: 1px solid $special-grey;
+    padding-top: 8px;
+  }
 }
