@@ -41,6 +41,10 @@
     justify-content: flex-end;
     padding-top: 42px;
   }
+
+  @media (min-width: $desktop-width){
+    padding-top: 70px;
+  }
 }
 
 .main-nav--nojs{

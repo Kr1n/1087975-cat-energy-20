@@ -22,8 +22,15 @@
     font-size: 60px;
     line-height: 60px;
     border: 0;
-    padding-bottom: 93px;
+    padding-bottom: 0px;
     padding-left: $padding-tablet;
     padding-right: $padding-tablet;
+    padding-top: 65px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-top: 74px;
+    margin-left: $padding-desktop;
+    margin-right: $padding-desktop;
   }
 }

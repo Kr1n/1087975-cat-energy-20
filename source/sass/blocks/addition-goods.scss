@@ -8,6 +8,14 @@
   @media (min-width: $tablet-width){
     padding-left: $padding-tablet;
     padding-right: $padding-tablet;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width){
+    grid-column: 1 / 4;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+    padding-bottom: 86px;
   }
 }
 
@@ -41,6 +49,7 @@
 
     &::after{
       right: 0;
+      top: 48px;
     }
   }
 }
@@ -49,6 +58,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width){
+    margin-right: 325px;
+  }
 }
 
 .addition-goods__item{
@@ -68,6 +81,16 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
   }
+
+  @media (min-width: $desktop-width){
+    border-left: 0;
+    border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 0;
+    column-gap: 40px;
+  }
 }
 
 .addition-goods__text{
@@ -83,6 +106,11 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width){
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 .addition-goods__description{
@@ -97,6 +125,11 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width){
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 .addition-goods__price{
@@ -107,6 +140,11 @@
   font-size: 14px;
   line-height: 14px;
   margin-left: auto;
+
+  @media (min-width: $desktop-width){
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
 
 .addition-goods__button{
@@ -129,6 +167,12 @@
 
   @media (min-width: $tablet-width){
     grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width){
+    grid-column: auto;
+    margin-top: 15px;
+    margin-bottom: 17px;
   }
 }
 

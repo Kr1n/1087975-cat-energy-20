@@ -12,6 +12,20 @@
   padding-bottom: 39px;
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 54px;
+    padding-bottom: 66px;
+    padding-left: $padding-tablet + 30px;
+    padding-right: $padding-tablet + 30px;
+  }
+
+  @media (min-width: $tablet-width){
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
 }
 
 .form__fieldset{
@@ -23,6 +37,7 @@
   text-transform: uppercase;
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
+  position: relative;
 
   &--general{
     border-bottom: 1px solid $border-color-socials;
@@ -34,9 +49,6 @@
   &--service{
     padding-top: 26px;
     border-bottom: 1px solid $border-color-socials;
-    color: $special_dark-grey-2;
-    display: grid;
-    row-gap: 15px;
   }
 
   &--contact{
@@ -44,8 +56,58 @@
     padding-bottom: 24px;
   }
 
-  &--comment{
+  @media (min-width: $tablet-width){
+    padding-left: $padding-tablet + 30px;
+    padding-right: $padding-tablet + 30px;
 
+    &--general{
+      border: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &--service{
+      padding-top: 48px;
+      padding-bottom: 51px;
+      border: 0;
+    }
+
+    &--contact{
+      border: 0;
+      padding-bottom: 42px;
+    }
+
+    &--comment{
+      padding-bottom: 42px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+
+    &--general{
+      padding-right: 0;
+    }
+
+    &--service{
+      padding-top: 0;
+      padding-bottom: 51px;
+      padding-left: 0;
+      border: 0;
+    }
+  }
+}
+
+.form__fieldset-border{
+  color: $special_dark-grey-2;
+  display: grid;
+  row-gap: 15px;
+
+  @media (min-width: $tablet-width){
+    row-gap: 0;
+    border: 1px solid $border-color-socials;
+    padding: 25px;
   }
 }
 
@@ -68,6 +130,29 @@
     display: grid;
     grid-template-columns: max-content 1fr;
     column-gap: 15px;
+  }
+
+  @media (min-width: $tablet-width){
+    padding-bottom: 20px;
+
+    .form__fieldset--service &{
+      padding-bottom: 0;
+    }
+
+    .form__fieldset--addition &{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    .form__fieldset--addition &{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .form__fieldset--contact &{
+      padding: 0;
+    }
   }
 }
 
@@ -100,6 +185,33 @@
   color: $text-black;
   margin-top: 27px;
   margin-bottom: 33px;
+  text-transform: none;
+
+  @media (min-width: $tablet-width){
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+    background-color: $text-white;
+    width: max-content;
+    padding-right: 39px;
+    padding-left: 39px;
+
+    .form__fieldset--addition &{
+      margin-bottom: 57px;
+    }
+
+    &::after{
+      content: "";
+      width: 100%;
+      height: 2px;
+      margin: auto;
+      top: 44px;
+      right: 0;
+      background-color: $basic-green;
+      position: absolute;
+      z-index: -1;
+    }
+  }
 }
 
 .form__textarea{
@@ -121,6 +233,16 @@
 .submit__wrapper{
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
+  padding-top: 54px;
+  padding-bottom: 72px;
+
+  @media (min-width: $tablet-width){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: $padding-tablet + 30px;
+    padding-right: $padding-tablet + 30px;
+    column-gap: 61px;
+  }
 }
 
 .form__submit{
@@ -138,13 +260,23 @@
   margin-top: 13px;
   margin-bottom: 25px;
   width: 100%;
+
+  @media (min-width: $tablet-width){
+    margin: 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 }
 
 .form__label{
   display: block;
   position: relative;
-
-
+  font-size: 16px;
+  line-height: 18px;
 
   .form__fieldset--service &{
     padding-left: 45px;
@@ -205,6 +337,15 @@
     left: 6px;
     top: calc(50% - 7px);
   }
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 30px;
+
+    .form__fieldset--addition &{
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .form__legend{
@@ -215,6 +356,14 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width){
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .form__input-icon{

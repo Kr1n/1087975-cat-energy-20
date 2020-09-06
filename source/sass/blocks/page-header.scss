@@ -1,5 +1,19 @@
 .page-header{
   position: relative;
+  margin-left: $padding-mobile;
+  margin-right: $padding-mobile;
+
+  @media (min-width: $tablet-width){
+    top: 19px;
+    margin-left: $padding-tablet;
+    margin-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width){
+    top: 34px;
+    margin-left: $padding-desktop;
+    margin-right: $padding-desktop;
+  }
 }
 
 .page-header__logo{
@@ -9,5 +23,9 @@
 
   @media (min-width: $tablet-width){
     top: 19px;
+  }
+
+  @media (min-width: $desktop-width){
+    top: 34px;
   }
 }

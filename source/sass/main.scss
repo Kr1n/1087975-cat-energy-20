@@ -56,3 +56,11 @@ a{
 .nowrap{
   white-space: nowrap;
 }
+
+.grid-2-col{
+  @media (min-width: $desktop-width){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
+}

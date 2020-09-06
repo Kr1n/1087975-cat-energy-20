@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width){
     border: 0;
+    padding-top: 93px;
   }
 }
 
@@ -22,8 +23,16 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     row-gap: 60px;
-    padding-left: $padding-mobile;
-    padding-right: $padding-mobile;
+    margin-left: $padding-mobile;
+    margin-right: $padding-mobile;
+  }
+
+  @media (min-width: $desktop-width){
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: $padding-desktop;
+    margin-right: $padding-desktop;
+    column-gap: 80px;
+    row-gap: 80px;
   }
 }
 

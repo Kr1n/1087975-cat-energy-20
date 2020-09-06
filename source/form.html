@@ -43,53 +43,58 @@
 
     <form class="form" action="https://echo.htmlacademy.ru/" method="get">
       <h2 class="form__header">Заполните анкету, и мы подберем<br>программу питания для вашего кота</h2>
+      <div class="grid-2-col">
+        <fieldset class="form__fieldset form__fieldset--general">
+          <div class="form__wrapper">
+            <label class="form__label" for="name">Имя:*</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Барсик" required>
+          </div>
+          <div class="form__wrapper">
+            <label class="form__label" for="weight">Вес (кг):*</label>
+            <input class="form__input" type="text" id="weight" name="weight" placeholder="7" required>
+          </div>
+          <div class="form__wrapper">
+            <label class="form__label" for="age">Возраст (лет):</label>
+            <input class="form__input" type="text" id="age" name="age" placeholder="7" required>
+          </div>
+        </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--general">
-        <div class="form__wrapper">
-          <label class="form__label" for="name">Имя:*</label>
-          <input class="form__input" type="text" id="name" name="name" placeholder="Барсик" required>
-        </div>
-        <div class="form__wrapper">
-          <label class="form__label" for="weight">Вес (кг):*</label>
-          <input class="form__input" type="text" id="weight" name="weight" placeholder="7" required>
-        </div>
-        <div class="form__wrapper">
-          <label class="form__label" for="age">Возраст (лет):</label>
-          <input class="form__input" type="text" id="age" name="age" placeholder="7" required>
+        <fieldset class="form__fieldset form__fieldset--service">
+          <div class="form__fieldset-border">
+            <div class="form__wrapper">
+              <input class="visually-hidden" type="radio" id="slimming" name="service" value="slimming" checked>
+              <label class="form__label" for="slimming" tabindex="0">Похудение</label>
+            </div>
+            <div class="form__wrapper">
+              <input class="visually-hidden" type="radio" id="fatting" name="service" value="fatting">
+              <label class="form__label" for="fatting" tabindex="0">Набор массы</label>
+            </div>
+            <div class="form__wrapper">
+              <input class="visually-hidden" type="radio" id="other" name="service" value="other">
+              <label class="form__label" for="other" tabindex="0">Не знаю (Нужен ваш совет)</label>
+            </div>
+          </div>
         </div>
       </fieldset>
-
-      <fieldset class="form__fieldset form__fieldset--service">
-        <div class="form__wrapper">
-          <input class="visually-hidden" type="radio" id="slimming" name="service" value="slimming" checked>
-          <label class="form__label" for="slimming" tabindex="0">Похудение</label>
-        </div>
-        <div class="form__wrapper">
-          <input class="visually-hidden" type="radio" id="fatting" name="service" value="fatting">
-          <label class="form__label" for="fatting" tabindex="0">Набор массы</label>
-        </div>
-        <div class="form__wrapper">
-          <input class="visually-hidden" type="radio" id="other" name="service" value="other">
-          <label class="form__label" for="other" tabindex="0">Не знаю (Нужен ваш совет)</label>
-        </div>
-      </div>
-    </fieldset>
+    </div>
 
     <fieldset class="form__fieldset form__fieldset--contact">
-      <h3 class="form__descrition">Контактные данные <br>(владельца кота)</h3>
-      <div class="form__wrapper">
-        <label class="form__label" for="email">E-mail:*</label>
-        <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-        <svg class="form__input-icon form__input-icon--email" width="20" height="14">
-          <use xlink:href="img/sprite.svg#icon-mail"/>
-        </svg>
-      </div>
-      <div class="form__wrapper">
-        <label class="form__label" for="phone">Телефон:*</label>
-        <input class="form__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-        <svg class="form__input-icon form__input-icon--phone" width="20" height="20">
-          <use xlink:href="img/sprite.svg#icon-phone"/>
-        </svg>
+      <h3 class="form__descrition">Контактные данные (владельца кота)</h3>
+      <div class="grid-2-col">
+        <div class="form__wrapper">
+          <label class="form__label" for="email">E-mail:*</label>
+          <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+          <svg class="form__input-icon form__input-icon--email" width="20" height="14">
+            <use xlink:href="img/sprite.svg#icon-mail"/>
+          </svg>
+        </div>
+        <div class="form__wrapper">
+          <label class="form__label" for="phone">Телефон:*</label>
+          <input class="form__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          <svg class="form__input-icon form__input-icon--phone" width="20" height="20">
+            <use xlink:href="img/sprite.svg#icon-phone"/>
+          </svg>
+        </div>
       </div>
     </fieldset>
 
