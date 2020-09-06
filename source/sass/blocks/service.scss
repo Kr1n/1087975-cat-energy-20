@@ -2,6 +2,16 @@
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
   padding-top: 22px;
+
+  @media (min-width: $tablet-width){
+    padding-left: $padding-tablet;
+  padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-left: $padding-desktop;
+  padding-right: $padding-desktop;
+  }
 }
 
 .service__list{
@@ -10,6 +20,11 @@
   list-style: none;
   display: grid;
   gap: 20px;
+
+  @media (min-width: $desktop-width){
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .service__item{
@@ -26,6 +41,10 @@
     padding-left: 52px;
     padding-top: 77px;
     padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width){
+    display: block;
   }
 }
 
@@ -46,6 +65,11 @@
     line-height: 36px;
     padding-left: 0;
     padding-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-left: 160px;
+    padding-bottom: 73px;
   }
 }
 
@@ -83,6 +107,10 @@
     padding-top: 48px;
     padding-bottom: 0;
   }
+
+  @media (min-width: $desktop-width){
+    padding-top: 0;
+  }
 }
 
 .service__icon{
@@ -110,6 +138,22 @@
 
     &--pro{
       width: 268px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    position: absolute;
+
+    &--pro{
+      left: 33px;
+      top: 41px;
+      width: 134px;
+    }
+
+    &--slim{
+      left: 52px;
+      top: 47px;
+      width: 100px;
     }
   }
 }

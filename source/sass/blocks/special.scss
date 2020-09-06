@@ -3,6 +3,17 @@
   padding-right: $padding-mobile;
   padding-top: 27px;
   padding-bottom: 42px;
+
+  @media (min-width: $tablet-width){
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+    padding-top: 71px;
+  }
 }
 
 .special__header{
@@ -32,6 +43,10 @@
     grid-template-columns: 1fr 1fr;
     padding-top: 32px;
     gap: 37px;
+  }
+
+  @media (min-width: $desktop-width){
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

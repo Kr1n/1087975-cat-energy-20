@@ -75,6 +75,12 @@
       border-bottom: 2px solid $basic-green;
     }
   }
+
+  @media (min-width: $desktop-width){
+    &--current{
+      border-bottom: 2px solid $text-white;
+    }
+  }
 }
 
 .main-nav__link{
@@ -96,6 +102,13 @@
     line-height: 24px;
     text-transform: uppercase;
     min-height: auto;
+  }
+
+  @media (min-width: $desktop-width){
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-white;
   }
 }
 

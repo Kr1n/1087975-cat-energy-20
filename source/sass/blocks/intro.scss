@@ -19,6 +19,22 @@
     background-size: auto;
     padding-left: $padding-tablet + 87px;
     min-height: 872px;
+
+    @media (min-resolution: 2dppx){
+      background:
+      url("../img/other/index-background-tablet@2x.jpg") bottom no-repeat;
+      background-size: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+    background:
+    url("../img/other/index-can-desktop@1x.png") 59% 62% no-repeat,
+    url("../img/other/index-background-desktop@1x.jpg") right -100px no-repeat;
+    background-size: auto, contain;
+    min-height: 720px;
   }
 }
 
@@ -44,6 +60,11 @@
     padding-right: 150px;
     padding-left: 0;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-right: 53%;
+    padding-top: 223px;
   }
 }
 

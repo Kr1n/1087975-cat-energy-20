@@ -1,6 +1,12 @@
 .parameter{
   position: relative;
   min-width: 45%;
+
+  @media (min-width: $desktop-width){
+    min-width: auto;
+    width: 162px;
+    box-sizing: border-box;
+  }
 }
 
 .parameter__text{
@@ -45,5 +51,9 @@
     width: auto;
     font-size: 14px;
     line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width){
+    background-color: $background-example;
   }
 }
