@@ -129,12 +129,13 @@
     &::before{
       content: "";
       position: absolute;
-      width: 120%;
+      //width: 120%;
       height: 462px;
       background-color: $background-example;
       left: 0;
-      margin-left: -$padding-desktop;
+      width: 100vw;
       z-index: -1;
+      margin-left: -$padding-tablet;
     }
   }
 
@@ -143,12 +144,13 @@
     top: 0;
     padding-left: 33%;
     padding-right: $padding-desktop;
-    width: 100%;
+    //width: 100%;
     box-sizing: border-box;
     top: 150px;
 
     &::before{
       height: 598px;
+      margin-left: -$padding-desktop;
     }
   }
 }
