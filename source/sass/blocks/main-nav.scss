@@ -11,10 +11,10 @@
   display: block;
   box-sizing: border-box;
   width: 50px;
-  height: 65px;
+  height: 66px;
   border: 0;
   background-color: transparent;
-  text-align: center;
+  text-align: right;
 
   @media (min-width: $tablet-width){
     display: none;
@@ -77,7 +77,7 @@
   }
 
   @media (min-width: $desktop-width){
-    &--current{
+    .home &--current{
       border-bottom: 2px solid $text-white;
     }
   }
@@ -108,7 +108,10 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    color: $text-white;
+
+    .home &{
+      color: $text-white;
+    }
   }
 }
 

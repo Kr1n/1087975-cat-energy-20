@@ -2,11 +2,12 @@
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
   padding-top: 27px;
-  padding-bottom: 42px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width){
     padding-left: $padding-tablet;
     padding-right: $padding-tablet;
+    padding-top: 44px;
   }
 
   @media (min-width: $desktop-width){
@@ -35,14 +36,14 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 20px;
+  gap: 17px;
   padding-top: 38px;
   counter-reset: count;
 
   @media (min-width: $tablet-width){
     grid-template-columns: 1fr 1fr;
     padding-top: 32px;
-    gap: 37px;
+    gap: 58px;
   }
 
   @media (min-width: $desktop-width){
@@ -53,7 +54,7 @@
 .special__item{
   font-family: "Arial", sans-serif;
   padding-left: 80px;
-  padding-right: 85px;
+  padding-top: 3px;
   min-height: 60px;
   font-weight: normal;
   font-size: 14px;
@@ -102,43 +103,43 @@
 
   &--leaf::before{
     background: $basic-green url("../img/advantage/advantage-leaf@1x.png") center center no-repeat;
-    background-size: cover;
+    background-size: 50px;
   }
 
   &--clock::before{
     background: $basic-green url("../img/advantage/advantage-clock@1x.png") center center no-repeat;
-    background-size: cover;
+    background-size: 50px;
   }
 
   &--dining::before{
     background: $basic-green url("../img/advantage/advantage-dining@1x.png") center center no-repeat;
-    background-size: cover;
+    background-size: 50px;
   }
 
   &--powder::before{
     background: $basic-green url("../img/advantage/advantage-powder@1x.png") center center no-repeat;
-    background-size: cover;
+    background-size: 50px;
   }
 
   @media (min-resolution: 2dppx){
     &--leaf::before{
       background: $basic-green url("../img/advantage/advantage-leaf@2x.png") center center no-repeat;
-      background-size: cover;
+      background-size: 50px;
     }
 
     &--clock::before{
       background: $basic-green url("../img/advantage/advantage-clock@2x.png") center center no-repeat;
-      background-size: cover;
+      background-size: 50px;
     }
 
     &--dining::before{
       background: $basic-green url("../img/advantage/advantage-dining@2x.png") center center no-repeat;
-      background-size: cover;
+      background-size: 50px;
     }
 
     &--powder::before{
       background: $basic-green url("../img/advantage/advantage-powder@2x.png") center center no-repeat;
-      background-size: cover;
+      background-size: 50px;
     }
   }
 }

@@ -12,8 +12,11 @@
   @media (min-width: $desktop-width){
     padding-left: $padding-desktop;
     padding-right: $padding-desktop;
-    position: absolute;
     width: 100%;
+
+    .home &{
+      position: absolute;
+    }
   }
 }
 

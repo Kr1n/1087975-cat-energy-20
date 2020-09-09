@@ -2,16 +2,16 @@
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
   background:
-  url("../img/other/index-can-mobile@1x.png") center 190px no-repeat,
+  url("../img/other/index-can-mobile@1x.png") center 166px no-repeat,
   url("../img/other/index-background-mobile@1x.jpg") center top no-repeat;
   background-size: auto, contain;
   height: auto;
 
   @media (min-resolution: 2dppx){
     background:
-    url("../img/other/index-can-mobile@2x.png") center 190px no-repeat,
+    url("../img/other/index-can-mobile@2x.png") center 166px no-repeat,
     url("../img/other/index-background-mobile@2x.jpg") center top no-repeat;
-    background-size: auto, contain;
+    background-size: 280px, contain;
   }
 
   @media (min-width: $tablet-width){
@@ -47,7 +47,7 @@
   margin: 0;
   padding: 0;
   padding-top: 27px;
-  padding-bottom: 41px;
+  padding-bottom: 25px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -59,6 +59,7 @@
     padding-top: 62px;
     padding-right: 150px;
     padding-left: 0;
+    padding-bottom: 42px;
     text-align: left;
   }
 
@@ -73,6 +74,10 @@
   padding: 0;
   color: $text-white;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
 
   @media (min-width: $tablet-width){
     font-weight: normal;
@@ -95,7 +100,7 @@
   display: block;
   padding-top: 11px;
   padding-bottom:11px;
-  margin-top: 350px;
+  margin-top: 302px;
 
   @media (min-width: $tablet-width){
     font-weight: normal;
@@ -103,6 +108,8 @@
     padding-top: 14px;
     padding-bottom:14px;
     width: 244px;
-    margin-top: 49px;
+    margin-top: 48px;
+    margin-left: -5px;
+    line-height: 26px;
   }
 }

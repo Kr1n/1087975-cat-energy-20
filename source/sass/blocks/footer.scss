@@ -1,7 +1,7 @@
 .footer{
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
-  padding-top: 39px;
+  padding-top: 37px;
   padding-bottom: 32px;
   text-align: center;
   background-color: $basic-grey;
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
-  padding-bottom: 66px;
+    padding-bottom: 66px;
   }
 }
 
@@ -24,7 +24,7 @@
 }
 
 .footer__copyright{
-  padding-top: 28px;
+  padding-top: 19px;
 
   @media (min-width: $tablet-width){
     padding-top: 0;

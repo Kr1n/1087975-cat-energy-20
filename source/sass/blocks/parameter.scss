@@ -1,6 +1,6 @@
 .parameter{
   position: relative;
-  min-width: 45%;
+  min-width: 44%;
 
   @media (min-width: $desktop-width){
     min-width: auto;
@@ -20,8 +20,9 @@
   border: 1px solid $special-grey;
   border-radius: 2px;
   min-height: 56px;
-  padding-top: 12px;
+  padding-top: 13px;
   box-sizing: border-box;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width){
     font-size: 30px;
@@ -45,6 +46,7 @@
   margin-top: -12px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width){
     background-color: $text-white;
