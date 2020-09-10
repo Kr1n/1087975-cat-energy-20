@@ -85,6 +85,9 @@
     min-height: 280px;
     box-sizing: border-box;
 
+    &--leaf{
+      margin-right: 94px;
+    }
 
     &::before{
       width: 80px;
@@ -104,10 +107,6 @@
       right: 0;
       z-index: -1;
     }
-  }
-
-  &--leaf{
-    margin-right: 94px;
   }
 
   &--leaf::before{

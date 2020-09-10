@@ -19,11 +19,11 @@
   height: auto;
   padding: 0;
   margin: 0;
-  padding-top: 58px;
+  padding-top: 54px;
   padding-left: 50px;
   padding-right: 50px;
-  margin-left: $padding-tablet;
-  margin-right: $padding-tablet;
+  margin-left: $padding-mobile;
+  margin-right: $padding-mobile;
   margin-top: 39px;
   margin-bottom: 35px;
 
@@ -41,18 +41,18 @@
     background-size: contain;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 53%;
     text-align: left;
     min-height: 200px;
     width: 708px;
     box-sizing: border-box;
-    padding-left: 78px;
+    padding-left: 88px;
     padding-top: 0;
     min-height: 200px;
-    margin-bottom: 78px;
+    margin-bottom: 73px;
     margin-top: 69px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: $padding-tablet;
+    margin-right: $padding-tablet;
 
     @media (min-resolution: 2dppx){
       background:
@@ -109,7 +109,7 @@
 }
 
 .offer__img{
-  padding-bottom: 48px;
+  padding-bottom: 50px;
   color: $text-white;
 
   @media (min-width: $tablet-width){
@@ -117,7 +117,6 @@
   }
 
   @media (min-width: $tablet-width){
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 54px;
   }
 }
