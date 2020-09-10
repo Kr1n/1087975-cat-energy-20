@@ -12,7 +12,7 @@
   font-size: 36px;
   line-height: 36px;
   padding-top: 27px;
-  padding-bottom: 39px;
+  padding-bottom: 36px;
   border-top: 1px solid $basic-grey-2;
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
@@ -29,8 +29,10 @@
   }
 
   @media (min-width: $desktop-width){
-    padding-top: 74px;
+    padding-top: 81px;
     margin-left: $padding-desktop;
     margin-right: $padding-desktop;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

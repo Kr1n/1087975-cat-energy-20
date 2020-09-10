@@ -70,13 +70,14 @@
     url("../img/other/gift-photo-desktop@1x.jpg") center top no-repeat;
     background-size: contain;
     grid-template-columns: auto;
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     position: absolute;
     right: 0;
     top: -376px;
     margin: 0;
+    margin-top: 2px;
 
     @media (min-resolution: 2dppx){
       background:
@@ -118,5 +119,8 @@
 
   @media (min-width: $tablet-width){
     padding-top: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
   }
 }
