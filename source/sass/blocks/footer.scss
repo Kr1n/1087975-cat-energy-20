@@ -7,10 +7,20 @@
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width){
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 50px;
     padding-bottom: 66px;
+    text-align: left;
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-top: 58px;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
   }
 }
 
@@ -29,4 +39,8 @@
   @media (min-width: $tablet-width){
     padding-top: 0;
   }
+}
+
+.footer__logo-img{
+  margin-top: 8px;
 }

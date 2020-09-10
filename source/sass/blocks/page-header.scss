@@ -26,12 +26,22 @@
   top: 10px;
 
   @media (min-width: $tablet-width){
-    top: 19px;
+    top: 24px;
     left: $padding-tablet;
   }
 
   @media (min-width: $desktop-width){
-    top: 34px;
+    top: 54px;
     left: $padding-desktop;
+  }
+}
+
+.page-header__logo-img{
+  @media (min-width: $tablet-width){
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width){
+    width: 202px;
   }
 }

@@ -8,12 +8,14 @@
     padding-left: $padding-tablet;
     padding-right: $padding-tablet;
     padding-top: 44px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width){
     padding-left: $padding-desktop;
     padding-right: $padding-desktop;
     padding-top: 71px;
+    padding-bottom: 26px;
   }
 }
 
@@ -43,11 +45,13 @@
   @media (min-width: $tablet-width){
     grid-template-columns: 1fr 1fr;
     padding-top: 32px;
-    gap: 58px;
+    row-gap: 37px;
+    column-gap: 60px;
   }
 
   @media (min-width: $desktop-width){
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -76,7 +80,8 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
-    padding-top: 151px;
+    padding-top: 152px;
+    margin-right: 77px;
     min-height: 280px;
     box-sizing: border-box;
 
@@ -99,6 +104,10 @@
       right: 0;
       z-index: -1;
     }
+  }
+
+  &--leaf{
+    margin-right: 94px;
   }
 
   &--leaf::before{
@@ -140,6 +149,15 @@
     &--powder::before{
       background: $basic-green url("../img/advantage/advantage-powder@2x.png") center center no-repeat;
       background-size: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    margin-right: 0;
+    padding-top: 152px;
+
+    &--leaf{
+      margin-right: 14px;
     }
   }
 }
