@@ -167,12 +167,12 @@
 }
 
 .example__control{
-  padding-top: 43px;
+  padding-top: 33px;
   text-align: center;
   display: grid;
   grid-template-columns: auto 1fr auto;
   padding-left: 50px;
-  padding-right: 45px;
+  padding-right: 41px;
 
   @media (min-width: $tablet-width){
     padding-top: 0;
@@ -230,6 +230,9 @@
 
   @media (min-width: $tablet-width){
     margin-left: 7px;
+    display: grid;
+    grid-template-columns: 49.5% auto;
+    max-width: 708px;
   }
 
   @media (min-width: $desktop-width){
@@ -262,22 +265,29 @@
 
 .example__image{
   display: block;
-
-  &--after{
-    display: none;
-  }
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
 
   @media (min-width: $tablet-width){
-    height: auto;
+    object-fit: none;
 
     &--before{
       min-width: 708px;
       display: block;
+      left: 0;
+
     }
 
     &--after{
+      right: 0;
+      left: auto;
       display: block;
       min-width: 690px;
+
     }
   }
 
@@ -291,20 +301,32 @@
 }
 
 .example__img-layout{
-  position: absolute;
+  position: relative;
   display: block;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   max-width: 320px;
+  height: 240px;
   overflow: hidden;
+  margin: auto;
+
+  &--after{
+    display: none;
+  }
 
   @media (min-width: 768px){
     margin-top: -170px;
-    width: 708px;
+    height: 517px;
     max-width: none;
+
+    &--before{
+      display: block;
+    }
+
+    &--after{
+      display: block;
+    }
   }
 
   @media (min-width: $desktop-width){
