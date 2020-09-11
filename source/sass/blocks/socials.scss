@@ -26,6 +26,14 @@
   color: $special-grey-2;
   width: 20px;
 
+  &:hover{
+    color: $basic-green;
+  }
+
+  &:active{
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width){
     &--vk{
       width: 30px;

@@ -95,6 +95,14 @@
   text-transform: uppercase;
   box-sizing: border-box;
 
+  &[href]:hover{
+    opacity: 0.6;
+  }
+
+  &[href]:active{
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width){
     padding-top: 0;
     padding-bottom: 8px;

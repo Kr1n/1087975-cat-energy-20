@@ -110,6 +110,10 @@
   padding-bottom: 22px;
   border-top: 1px solid $border-color-service;
 
+  &:active{
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width){
     font-size: 20px;
     line-height: 30px;
@@ -181,6 +185,8 @@
 
   &--long{
     display: none;
+    width: 32px;
+    height: 10px;
   }
 
   .service__link:hover &{
@@ -195,6 +201,10 @@
     padding-left: 21px;
     margin-bottom: 4px;
     width: 24px;
+
+    &--long{
+      width: 32px;
+    }
   }
 
   @media (min-width: $desktop-width){

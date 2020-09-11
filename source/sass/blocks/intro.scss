@@ -55,8 +55,9 @@
   padding: 0;
   padding-top: 27px;
   padding-bottom: 25px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width){
     font-weight: normal;
@@ -108,6 +109,14 @@
   padding-top: 11px;
   padding-bottom:11px;
   margin-top: 302px;
+
+  &:hover{
+    background-color: $basic-green-2;
+  }
+
+  &:active{
+    color: rgba($text-white, 0.3);
+  }
 
   @media (min-width: $tablet-width){
     font-weight: normal;

@@ -25,6 +25,14 @@
   left: $padding-mobile;
   top: 10px;
 
+  &[href]:hover{
+    opacity: 0.8;
+  }
+
+  &[href]:active{
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width){
     top: 24px;
     left: $padding-tablet;

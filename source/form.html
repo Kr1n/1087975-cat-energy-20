@@ -90,7 +90,7 @@
         </div>
         <div class="form__wrapper">
           <label class="form__label" for="phone">Телефон:*</label>
-          <input class="form__input" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+          <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
           <svg class="form__input-icon form__input-icon--phone" width="20" height="20">
             <use xlink:href="img/sprite.svg#icon-phone"/>
           </svg>
@@ -120,7 +120,7 @@
       </div>
     </fieldset>
 
-    <div class="submit__wrapper">
+    <div class="form__submit-wrapper">
       <button class="form__submit">Отправить заявку</button>
       <p class="form__legend">* — Обязательные поля</p>
     </div>
@@ -172,12 +172,14 @@
     </ul>
   </div>
   <div class="footer__copyright copyright">
-    <p class="copyright__text">HTML Academy</p>
     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="visually-hidden">https://htmlacademy.ru/</span>
-      <svg width="27" height="34">
-        <use xlink:href="img/sprite.svg#icon-htmlacademy"/>
-      </svg>
+      <p class="copyright__text">HTML Academy</p>
+      <div class="copyright__image">
+        <span class="visually-hidden">https://htmlacademy.ru/</span>
+        <svg width="27" height="34">
+          <use xlink:href="img/sprite.svg#icon-htmlacademy"/>
+        </svg>
+      </div>
     </a>
   </div>
 </footer>

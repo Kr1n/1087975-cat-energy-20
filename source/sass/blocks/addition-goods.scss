@@ -186,6 +186,14 @@
   margin-bottom: 18px;
   width: 100%;
 
+  &:hover{
+    background-color: $basic-green-2;
+  }
+
+  &:active{
+    color: rgba($text-white, 0.3);
+  }
+
   @media (min-width: $tablet-width){
     grid-column: 1/-1;
     padding-top: 10px;
@@ -198,8 +206,8 @@
     grid-column: auto;
     margin-top: 16px;
     margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 12px;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 }
 

@@ -132,7 +132,19 @@
         </div>
         <div class="example__control">
           <span class="example__control-text">Было</span>
-          <input class="example__input" type="range" min="0" max="1">
+          <div class="example__input example__input--range">
+            <div class="range">
+              <div class="range__toggle"></div>
+              <div class="range__bar"></div>
+            </div>
+          </div>
+          <div class="example__input example__input--switch">
+            <div class="switch">
+              <div class="switch__bar">
+                <div class="switch__toggle"></div>
+              </div>
+            </div>
+          </div>
           <span class="example__control-text">Стало</span>
         </div>
       </div>
@@ -184,12 +196,14 @@
       </ul>
     </div>
     <div class="footer__copyright copyright">
-      <p class="copyright__text">HTML Academy</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">https://htmlacademy.ru/</span>
-        <svg width="27" height="34">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"/>
-        </svg>
+        <p class="copyright__text">HTML Academy</p>
+        <div class="copyright__image">
+          <span class="visually-hidden">https://htmlacademy.ru/</span>
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"/>
+          </svg>
+        </div>
       </a>
     </div>
   </footer>

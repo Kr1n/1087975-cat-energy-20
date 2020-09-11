@@ -1,5 +1,13 @@
 .form{
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width){
+    padding-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-bottom: 81px;
+  }
 }
 
 .form__header{
@@ -11,7 +19,7 @@
   text-transform: uppercase;
   padding-bottom: 39px;
   padding-left: $padding-mobile;
-  padding-right: $padding-mobile;
+  padding-right: $padding-mobile + 40px;
 
   @media (min-width: $tablet-width){
     font-size: 20px;
@@ -24,7 +32,8 @@
 
   @media (min-width: $desktop-width){
     padding-left: $padding-desktop;
-    padding-right: $padding-desktop;
+    padding-right: 67%;
+    padding-top: 55px;
   }
 }
 
@@ -73,7 +82,7 @@
 
     &--contact{
       border: 0;
-      padding-bottom: 42px;
+      padding-bottom: 45px;
     }
 
     &--comment{
@@ -94,6 +103,15 @@
       padding-bottom: 51px;
       padding-left: 0;
       border: 0;
+    }
+
+    &--contact{
+      border: 0;
+      padding-bottom: 50px;
+    }
+
+    &--comment{
+      padding-bottom: 48px;
     }
   }
 }
@@ -146,15 +164,23 @@
       padding-bottom: 0;
     }
 
+    .form__fieldset--contact &{
+      column-gap: 16px;
+    }
+
     .form__fieldset--addition &{
       display: grid;
       grid-template-columns: 1fr 1fr;
+      column-gap: 57px;
+      row-gap: 10px;
+      padding-top: 4px;
     }
   }
 
   @media (min-width: $desktop-width){
     .form__fieldset--addition &{
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 80px;
     }
 
     .form__fieldset--contact &{
@@ -164,6 +190,8 @@
 }
 
 .form__input{
+  font-size: 16px;
+  line-height: 18px;
   border: 1px solid $border-color-form;
   padding: 0;
   margin: 0;
@@ -178,8 +206,71 @@
     text-transform: uppercase;
   }
 
+  &:hover{
+    border: 1px solid $special-grey;
+  }
+
+  &:active{
+    border: 2px solid $special_dark-grey;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+  }
+
+  &:focus{
+    border: 2px solid $special_dark-grey;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+  }
+
+  &:focus:invalid{
+    border: 2px solid $status-error;
+  }
+
   .form__fieldset--contact &{
     padding-right: 40px;
+  }
+
+  @media (min-width: $tablet-width){
+    padding-top: 9px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 18px;
+
+    &:active{
+      padding-left: 17px;
+      padding-top: 8px;
+      padding-bottom: 9px;
+    }
+
+    &:focus{
+      padding-left: 17px;
+      padding-top: 8px;
+      padding-bottom: 9px;
+    }
+
+    .form__fieldset--contact &{
+      padding-left: 24px;
+
+      &:active{
+        padding-left: 23px;
+      }
+
+      &:focus{
+        padding-left: 23px;
+      }
+
+      &--phone{
+        padding-left: 17px;
+      }
+    }
+
+    &::placeholder{
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -253,34 +344,53 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    margin-top: 22px;
     background-color: $text-white;
     width: max-content;
     padding-right: 39px;
     padding-left: 39px;
+    margin-left: -40px;
 
     .form__fieldset--addition &{
       margin-bottom: 57px;
+      padding-right: 42px;
+
+      &::after{
+        right: 0;
+      }
     }
 
-    &::after{
-      content: "";
-      width: 100%;
-      height: 2px;
-      margin: auto;
-      top: 44px;
-      right: 0;
-      background-color: $basic-green;
-      position: absolute;
-      z-index: -1;
+    .form__fieldset--comment &{
+      padding-right: 40px;
+
+      &::after{
+        right: 0;
+      }
     }
 
     .form__fieldset--contact &{
       width: max-content;
-      margin-left: -$padding-tablet;
+      padding-right: 42px;
 
       &::after{
-        width: 100%;
         right: 0;
+        top: 44px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: 18px;
+
+    .form__fieldset--contact &{
+      &::after{
+        top: 40px;
+      }
+    }
+
+    .form__fieldset--comment &{
+      &::after{
+        top: 40px;
       }
     }
   }
@@ -300,20 +410,74 @@
     color: inherit;
     text-transform: uppercase;
   }
+
+  &:hover{
+    border: 1px solid $special-grey;
+  }
+
+  &:active{
+    border: 2px solid $special_dark-grey;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+  }
+
+  &:focus{
+    border: 2px solid $special_dark-grey;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 14px;
+  }
+
+  &:focus:invalid{
+    border: 2px solid $status-error;
+  }
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    min-height: 173px;
+
+    &::placeholder{
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &:active{
+      padding-left: 17px;
+      padding-top: 7px;
+    }
+
+    &:focus{
+      padding-left: 17px;
+      padding-top: 7px;
+    }
+  }
 }
 
-.submit__wrapper{
+.form__submit-wrapper{
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
-  padding-top: 54px;
   padding-top: 3px;
 
   @media (min-width: $tablet-width){
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 44.3% 1fr;
     padding-left: $padding-tablet + 40px;
     padding-right: $padding-tablet + 30px;
     column-gap: 61px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width){
+    grid-template-columns: 46.6% 1fr;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+    padding-top: 35px;
+    column-gap: 82px;
   }
 }
 
@@ -333,9 +497,19 @@
   margin-bottom: 21px;
   width: 100%;
 
+  &:hover{
+    background-color: $basic-green-2;
+  }
+
+  &:active{
+    color: rgba($text-white, 0.3);
+  }
+
   @media (min-width: $tablet-width){
     margin: 0;
     font-size: 20px;
+    padding-top: 18px;
+    padding-bottom: 16px;
   }
 
   @media (min-width: $desktop-width){
@@ -349,6 +523,22 @@
   position: relative;
   font-size: 16px;
   line-height: 16px;
+
+  .form__fieldset--service &:hover::before{
+    border: 1px solid $border-color-hover;
+  }
+
+  .form__fieldset--service &:active{
+    opacity: 0.3;
+  }
+
+  .form__fieldset--addition &:hover::before{
+    border: 1px solid $border-color-hover;
+  }
+
+  .form__fieldset--addition &:active{
+    opacity: 0.3;
+  }
 
   .form__fieldset--service &{
     padding-left: 45px;
@@ -416,6 +606,7 @@
 
     .form__fieldset--addition &{
       margin-bottom: 32px;
+      padding-left: 59px;
     }
 
     .form__fieldset--service &{
@@ -436,6 +627,20 @@
       left: 14px;
       top: calc(50% - 9px);
     }
+
+    .form__fieldset--addition &::before{
+      width: 40px;
+      height: 40px;
+      left: 0;
+      top: calc(50% - 20px);
+    }
+
+    .form__fieldset--addition input:checked + &::after{
+      width: 16px;
+      height: 8px;
+      left: 12px;
+      top: calc(50% - 8px);
+    }
   }
 }
 
@@ -449,11 +654,14 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width){
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 16px;
     text-align: left;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: 18px;
   }
 }
 
@@ -475,11 +683,29 @@
     color: $basic-green;
   }
 
-  .form__input:invalid ~ &{
+  .form__input:focus ~ &{
+    color: $basic-green;
+  }
+
+  .form__input:invalid:focus ~ &{
     color: $status-error;
   }
 
-  .form__input:focus ~ &{
-    color: $basic-green;
+  @media (min-width: $tablet-width){
+    &--phone{
+      right: 16px;
+      top: 16px;
+    }
+
+    &--email{
+      right: 16px;
+      top: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    &--email{
+      right: 18px;
+    }
   }
 }

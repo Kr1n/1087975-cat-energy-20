@@ -1,9 +1,19 @@
 .copyright{
+  @media (min-width: $tablet-width){
+    margin-left: auto;
+  }
+}
+
+.copyright__link{
   font-family: "Arial", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 33px;
+
+  &:active{
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width){
     column-gap: 24px;
@@ -21,6 +31,11 @@
   color: $special_dark-grey;
 }
 
-.copyright__link{
+.copyright__image{
+  display: inline;
   color: $special-grey-2;
+
+  .copyright__link:hover &{
+    color: $basic-green;
+  }
 }

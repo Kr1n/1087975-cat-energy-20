@@ -28,6 +28,14 @@
   margin-bottom: 31px;
   display: block;
 
+  &[href]:hover{
+    opacity: 0.8;
+  }
+
+  &[href]:active{
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width){
     margin-bottom: 0;
   }
