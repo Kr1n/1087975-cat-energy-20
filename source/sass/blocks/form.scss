@@ -60,10 +60,6 @@
     padding-bottom: 30px;
   }
 
-  &--contact{
-
-  }
-
   @media (min-width: $tablet-width){
     padding-left: $padding-tablet + 40px;
     padding-right: $padding-tablet + 37px;
@@ -336,7 +332,6 @@
       background-color: $basic-green;
       position: absolute;
       z-index: -1;
-
     }
   }
 
@@ -492,7 +487,7 @@
   color: $text-white;
   display: block;
   padding-top: 11px;
-  padding-bottom:11px;
+  padding-bottom: 11px;
   margin-top: 13px;
   margin-bottom: 21px;
   width: 100%;

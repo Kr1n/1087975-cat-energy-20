@@ -72,7 +72,6 @@
   }
 
   @media (min-width: $desktop-width){
-    padding-bottom: 0;
     grid-template-columns: 1fr;
     padding-bottom: 35px;
     padding-top: 69px;
@@ -154,7 +153,6 @@
 
   @media (min-width: $desktop-width){
     position: absolute;
-    top: 0;
     padding-left: 40%;
     box-sizing: border-box;
     top: 179px;
@@ -177,7 +175,13 @@
   padding-right: 45px;
 
   @media (min-width: $tablet-width){
-    padding-top: 0px;
+    padding-top: 0;
+    padding-bottom: 67px;
+    padding-left: 54px;
+    padding-right: 56px;
+  }
+
+  @media (min-width: $desktop-width){
     padding-bottom: 67px;
     padding-left: 169px;
     padding-right: 97px;
@@ -233,38 +237,6 @@
   }
 }
 
-.example__image{
-  display: block;
-  position: absolute;
-  width: 100%;
-  max-width: 320px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media (min-width: $tablet-width){
-    height: auto;
-    margin-top: -170px;
-
-    &--before{
-      width: 708px;
-    }
-
-    &--after{
-      width: 690px;
-    }
-  }
-
-  @media (min-width: $desktop-width){
-    margin-top: -190px;
-
-    &--before{
-      width: 690px;
-    }
-  }
-}
-
 .example__input{
   width: 100%;
 
@@ -285,5 +257,57 @@
     &--range{
       display: block;
     }
+  }
+}
+
+.example__image{
+  display: block;
+
+  &--after{
+    display: none;
+  }
+
+  @media (min-width: $tablet-width){
+    height: auto;
+
+    &--before{
+      min-width: 708px;
+      display: block;
+    }
+
+    &--after{
+      display: block;
+      min-width: 690px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: -190px;
+
+    &--before{
+      min-width: 690px;
+    }
+  }
+}
+
+.example__img-layout{
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 320px;
+  overflow: hidden;
+
+  @media (min-width: 768px){
+    margin-top: -170px;
+    width: 708px;
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: -190px;
   }
 }

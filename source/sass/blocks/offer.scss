@@ -8,13 +8,13 @@
 }
 
 .offer__wrapper{
-  background-color: $basic-green;
   min-height: 289px;
   box-sizing: border-box;
   text-align: center;
   background:
-  url("../img/other/gift-photo-mobile@1x.jpg") center top no-repeat,
-  url("../img/other/gift-photo-mobile@1x.jpg") center top no-repeat;
+    url("../img/other/gift-photo-mobile@1x.jpg") center top no-repeat,
+    url("../img/other/gift-photo-mobile@1x.jpg") center top no-repeat,
+    $basic-green;
   background-size: contain;
   height: auto;
   padding: 0;
@@ -29,21 +29,22 @@
 
   @media (min-resolution: 2dppx){
     background:
-    url("../img/other/gift-photo-mobile@2x.jpg") center top no-repeat,
-    url("../img/other/gift-photo-mobile@2x.jpg") center top no-repeat;
+      url("../img/other/gift-photo-mobile@2x.jpg") center top no-repeat,
+      url("../img/other/gift-photo-mobile@2x.jpg") center top no-repeat,
+      $basic-green;
     background-size: contain;
   }
 
   @media (min-width: $tablet-width){
     background:
-    url("../img/other/gift-photo-tablet@1x.jpg") center top no-repeat,
-    url("../img/other/gift-photo-tablet@1x.jpg") center top no-repeat;
+      url("../img/other/gift-photo-tablet@1x.jpg") center top no-repeat,
+      url("../img/other/gift-photo-tablet@1x.jpg") center top no-repeat,
+      $basic-green;
     background-size: contain;
     height: auto;
     display: grid;
     grid-template-columns: auto 53%;
     text-align: left;
-    min-height: 200px;
     width: 708px;
     box-sizing: border-box;
     padding-left: 88px;
@@ -56,8 +57,9 @@
 
     @media (min-resolution: 2dppx){
       background:
-      url("../img/other/gift-photo-tablet@2x.jpg") center top no-repeat,
-      url("../img/other/gift-photo-tablet@2x.jpg") center top no-repeat;
+        url("../img/other/gift-photo-tablet@2x.jpg") center top no-repeat,
+        url("../img/other/gift-photo-tablet@2x.jpg") center top no-repeat,
+        $basic-green;
       background-size: contain;
     }
   }
@@ -66,8 +68,9 @@
     width: 245px;
     min-height: 289px;
     background:
-    url("../img/other/gift-photo-desktop@1x.jpg") center top no-repeat,
-    url("../img/other/gift-photo-desktop@1x.jpg") center top no-repeat;
+      url("../img/other/gift-photo-desktop@1x.jpg") center top no-repeat,
+      url("../img/other/gift-photo-desktop@1x.jpg") center top no-repeat,
+      $basic-green;
     background-size: contain;
     grid-template-columns: auto;
     padding-left: 20px;
@@ -81,8 +84,9 @@
 
     @media (min-resolution: 2dppx){
       background:
-      url("../img/other/gift-photo-desktop@2x.jpg") center top no-repeat,
-      url("../img/other/gift-photo-desktop@2x.jpg") center top no-repeat;
+        url("../img/other/gift-photo-desktop@2x.jpg") center top no-repeat,
+        url("../img/other/gift-photo-desktop@2x.jpg") center top no-repeat,
+        $basic-green;
       background-size: contain;
     }
   }

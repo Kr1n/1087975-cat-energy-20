@@ -113,22 +113,26 @@
 
       <div class="example__images">
         <div class="example__img-wrapper">
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/other/before-desktop@1x.webp, img/other/before-desktop@2x.webp 2x"/>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/other/before-tablet@1x.webp, img/other/before-tablet@2x.webp 2x"/>
-            <source type="image/webp" srcset="img/other/before-mobile@1x.webp, img/other/before-mobile@2x.webp 2x"/>
-            <source media="(min-width: 1440px)" srcset="img/other/before-desktop@1x.png, img/other/before-desktop@2x.png 2x"/>
-            <source media="(min-width: 768px)" srcset="img/other/before-tablet@1x.png, img/other/before-tablet@2x.png 2x"/>
-            <img class="example__image example__image--before" width="307" height="230" src="img/other/before-mobile@1x.png" srcset="img/other/before-mobile@2x.png 2x" alt="Было">
-          </picture>
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/other/after-desktop@1x.webp, img/other/after-desktop@2x.webp 2x"/>
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/other/after-tablet@1x.webp, img/other/after-tablet@2x.webp 2x"/>
-            <source type="image/webp" srcset="img/other/after-mobile@1x.webp, img/other/after-mobile@2x.webp 2x"/>
-            <source media="(min-width: 1440px)" srcset="img/other/after-desktop@1x.png, img/other/after-desktop@2x.png 2x"/>
-            <source media="(min-width: 768px)" srcset="img/other/after-tablet@1x.png, img/other/after-tablet@2x.png 2x"/>
-            <img class="example__image example__image--after" width="307" height="230" src="img/other/after-mobile@1x.png" srcset="img/other/after-mobile@2x.png 2x" alt="Стало">
-          </picture>
+          <div class="example__img-layout example__img-layout--before">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/other/before-desktop@1x.webp, img/other/before-desktop@2x.webp 2x"/>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/other/before-tablet@1x.webp, img/other/before-tablet@2x.webp 2x"/>
+              <source type="image/webp" srcset="img/other/before-mobile@1x.webp, img/other/before-mobile@2x.webp 2x"/>
+              <source media="(min-width: 1440px)" srcset="img/other/before-desktop@1x.png, img/other/before-desktop@2x.png 2x"/>
+              <source media="(min-width: 768px)" srcset="img/other/before-tablet@1x.png, img/other/before-tablet@2x.png 2x"/>
+              <img class="example__image example__image--before" width="307" height="230" src="img/other/before-mobile@1x.png" srcset="img/other/before-mobile@2x.png 2x" alt="Было">
+            </picture>
+          </div>
+          <div class="example__img-layout example__img-layout--after">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/other/after-desktop@1x.webp, img/other/after-desktop@2x.webp 2x"/>
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/other/after-tablet@1x.webp, img/other/after-tablet@2x.webp 2x"/>
+              <source type="image/webp" srcset="img/other/after-mobile@1x.webp, img/other/after-mobile@2x.webp 2x"/>
+              <source media="(min-width: 1440px)" srcset="img/other/after-desktop@1x.png, img/other/after-desktop@2x.png 2x"/>
+              <source media="(min-width: 768px)" srcset="img/other/after-tablet@1x.png, img/other/after-tablet@2x.png 2x"/>
+              <img class="example__image example__image--after" width="307" height="230" src="img/other/after-mobile@1x.png" srcset="img/other/after-mobile@2x.png 2x" alt="Стало">
+            </picture>
+          </div>
         </div>
         <div class="example__control">
           <span class="example__control-text">Было</span>

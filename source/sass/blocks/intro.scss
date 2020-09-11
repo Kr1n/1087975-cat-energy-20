@@ -2,15 +2,15 @@
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
   background:
-  url("../img/other/index-can-mobile@1x.png") center 166px no-repeat,
-  url("../img/other/index-background-mobile@1x.jpg") center top no-repeat;
+    url("../img/other/index-can-mobile@1x.png") center 166px no-repeat,
+    url("../img/other/index-background-mobile@1x.jpg") center top no-repeat;
   background-size: auto, contain;
   height: auto;
 
   @media (min-resolution: 2dppx){
     background:
-    url("../img/other/index-can-mobile@2x.png") center 166px no-repeat,
-    url("../img/other/index-background-mobile@2x.jpg") center top no-repeat;
+      url("../img/other/index-can-mobile@2x.png") center 166px no-repeat,
+      url("../img/other/index-background-mobile@2x.jpg") center top no-repeat;
     background-size: 280px, contain;
   }
 
@@ -21,8 +21,7 @@
     min-height: 872px;
 
     @media (min-resolution: 2dppx){
-      background:
-      url("../img/other/index-can-tablet@2x.jpg") bottom no-repeat;
+      background: url("../img/other/index-can-tablet@2x.jpg") bottom no-repeat;
       background-size: 709px 609px;
     }
   }
@@ -31,15 +30,15 @@
     padding-left: $padding-desktop + 80px;
     padding-right: $padding-desktop;
     background:
-    url("../img/other/index-can-desktop@1x.png") 63% center no-repeat,
-    url("../img/other/index-background-desktop@1x.jpg") right top no-repeat;
+      url("../img/other/index-can-desktop@1x.png") 63% center no-repeat,
+      url("../img/other/index-background-desktop@1x.jpg") right top no-repeat;
     background-size: auto, 720px 694px;
     min-height: 776px;
 
     @media (min-resolution: 2dppx){
       background:
-      url("../img/other/index-can-desktop@2x.png") 63% no-repeat,
-      url("../img/other/index-background-desktop@2x.jpg") right top no-repeat;
+        url("../img/other/index-can-desktop@2x.png") 63% no-repeat,
+        url("../img/other/index-background-desktop@2x.jpg") right top no-repeat;
       background-size: 552px 499px, 720px 694px;
     }
   }
@@ -107,7 +106,7 @@
   color: $text-white;
   display: block;
   padding-top: 11px;
-  padding-bottom:11px;
+  padding-bottom: 11px;
   margin-top: 302px;
 
   &:hover{
@@ -122,7 +121,7 @@
     font-weight: normal;
     font-size: 20px;
     padding-top: 14px;
-    padding-bottom:14px;
+    padding-bottom: 14px;
     width: 244px;
     margin-top: 48px;
     margin-left: -5px;
