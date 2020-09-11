@@ -91,7 +91,7 @@ const styles = () => {
   .pipe(csso())
   .pipe(rename("style.min.css"))
   .pipe(sourcemap.write("."))
-  .pipe(gulp.dest("source/css"))
+  .pipe(gulp.dest("build/css"))
   .pipe(sync.stream());
 }
 
@@ -113,7 +113,7 @@ exports.compress = compress;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -127,14 +127,14 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("build/sass/**/*.scss", gulp.series("styles"));
+  gulp.watch("build/*.html").on("change", sync.reload);
 }
 
 exports.build = gulp.series(
-  clean, webp, html, compress, copy, styles, sprite
+  clean, webp, html, copy, compress, sprite, styles
 );
 
 exports.default = gulp.series(
-  styles, sprite, server, watcher
+  styles, server, watcher
 );
