@@ -229,14 +229,18 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width){
-    margin-left: 7px;
+    margin-left: calc(50% - 347px);
     display: grid;
     grid-template-columns: 49.5% auto;
     max-width: 708px;
+    margin-top: -170px;
   }
 
   @media (min-width: $desktop-width){
-    margin-left: 31px;
+    margin-left: calc(50% - 327px);
+    margin-top: 0px;
+    max-width: 690px;
+    grid-template-columns: 53% auto;
   }
 }
 
@@ -292,8 +296,6 @@
   }
 
   @media (min-width: $desktop-width){
-    margin-top: -190px;
-
     &--before{
       min-width: 690px;
     }
@@ -315,8 +317,7 @@
     display: none;
   }
 
-  @media (min-width: 768px){
-    margin-top: -170px;
+  @media (min-width: $tablet-width){
     height: 517px;
     max-width: none;
 
