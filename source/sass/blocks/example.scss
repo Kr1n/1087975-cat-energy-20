@@ -238,7 +238,7 @@
 
   @media (min-width: $desktop-width){
     margin-left: calc(50% - 327px);
-    margin-top: 0px;
+    margin-top: 0;
     max-width: 690px;
     grid-template-columns: 53% auto;
   }
@@ -283,7 +283,6 @@
       min-width: 708px;
       display: block;
       left: 0;
-
     }
 
     &--after{
@@ -291,7 +290,6 @@
       left: auto;
       display: block;
       min-width: 690px;
-
     }
   }
 
