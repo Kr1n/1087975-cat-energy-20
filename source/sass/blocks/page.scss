@@ -36,3 +36,13 @@
     padding-right: 0;
   }
 }
+
+.page__main{
+  overflow-x: hidden;
+
+  @media (min-width: $desktop-width){
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
