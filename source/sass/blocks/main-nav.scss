@@ -1,0 +1,146 @@
+.main-nav{
+  @media (min-width: $tablet-width){
+    min-height: 78px;
+  }
+}
+
+.main-nav__toggle{
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 66px;
+  border: 0;
+  background-color: transparent;
+  text-align: right;
+
+  @media (min-width: $tablet-width){
+    display: none;
+  }
+}
+
+.main-nav__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $tablet-width - 1px){
+    .main-nav--closed &{
+      display: none;
+    }
+
+    .main-nav--opened &{
+      display: block;
+    }
+  }
+
+  @media (min-width: $tablet-width){
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-top: 70px;
+  }
+}
+
+.main-nav--nojs{
+  @media (max-width: $tablet-width - 1px){
+    & .main-nav__toggle{
+      display: none;
+    }
+
+    & .main-nav__list{
+      display: block;
+    }
+  }
+}
+
+.main-nav__item{
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 1px solid $border-color;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+
+  @media (min-width: $tablet-width){
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 35px;
+
+    &--current{
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    .home &--current{
+      border-bottom: 2px solid $text-white;
+    }
+  }
+}
+
+.main-nav__link{
+  display: block;
+  color: $text-black;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 22px;
+  min-height: 65px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+
+  &[href]:hover{
+    opacity: 0.6;
+  }
+
+  &[href]:active{
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width){
+    padding-top: 0;
+    padding-bottom: 8px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    min-height: auto;
+  }
+
+  @media (min-width: $desktop-width){
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 5px;
+
+    .home &{
+      color: $text-white;
+    }
+  }
+}
+
+.main-nav__toggle-cross{
+  .main-nav--closed &{
+    display: none;
+  }
+
+  .main-nav--opened &{
+    display: block;
+  }
+}
+
+.main-nav__toggle-burger{
+  .main-nav--closed &{
+    display: block;
+  }
+
+  .main-nav--opened &{
+    display: none;
+  }
+}

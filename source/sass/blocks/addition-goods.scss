@@ -1,0 +1,226 @@
+.addition-goods{
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  padding-top: 27px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width){
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width){
+    grid-column: 1 / 4;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+    padding-bottom: 86px;
+    margin-top: 48px;
+  }
+}
+
+.addition-goods__header{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 35px;
+  padding-right: 22px;
+  background-color: $text-white;
+  width: max-content;
+
+  &::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    margin: auto;
+    top: 42px;
+    right: -$padding-mobile;
+    background-color: $basic-green;
+    position: absolute;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet-width){
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 79px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after{
+      right: 0;
+      top: 48px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    padding-left: 40px;
+    padding-right: 35px;
+    margin-left: -40px;
+  }
+}
+
+.addition-goods__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $desktop-width){
+    margin-right: 325px;
+  }
+}
+
+.addition-goods__item{
+  border-bottom: 1px solid $special_grey;
+  padding-top: 13px;
+
+  &:nth-of-type(1){
+    border-top: 1px solid $special_grey;
+  }
+
+  @media (min-width: $tablet-width){
+    border-left: 1px solid $special_grey;
+    border-right: 1px solid $special_grey;
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width){
+    border-left: 0;
+    border-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: 36.3% 1fr 27.3%;
+    padding-top: 0;
+    column-gap: 0;
+  }
+}
+
+.addition-goods__text{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width){
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 0;
+  }
+}
+
+.addition-goods__description{
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    line-height: 26px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.addition-goods__price{
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width){
+    font-size: 16px;
+    line-height: 24px;
+    flex-basis: 93px;
+    text-align: right;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-basis: 81px;
+    text-align: left;
+  }
+}
+
+.addition-goods__button{
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: none;
+  background-color: $basic-green;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-white;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 14px;
+  margin-bottom: 18px;
+  width: 100%;
+
+  &:hover{
+    background-color: $basic-green-2;
+  }
+
+  &:active{
+    color: rgba($text-white, 0.3);
+  }
+
+  @media (min-width: $tablet-width){
+    grid-column: 1/-1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 13px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width){
+    grid-column: auto;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
+
+.addition-goods__wrapper{
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width){
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width){
+    justify-content: space-between;
+    padding-top: 8px;
+  }
+}

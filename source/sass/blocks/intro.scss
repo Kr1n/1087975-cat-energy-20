@@ -1,0 +1,136 @@
+.intro{
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  background:
+    url("../img/other/index-can-mobile@1x.png") center 166px no-repeat,
+    url("../img/other/index-background-mobile@1x.jpg") center top no-repeat;
+  background-size: auto, contain;
+  height: auto;
+
+  @media (min-resolution: 2dppx){
+    background:
+      url("../img/other/index-can-mobile@2x.png") center 166px no-repeat,
+      url("../img/other/index-background-mobile@2x.jpg") center top no-repeat;
+    background-size: 280px, contain;
+  }
+
+  @media (min-width: $tablet-width){
+    background: url("../img/other/index-can-tablet@1x.jpg") bottom no-repeat;
+    background-size: auto;
+    padding-left: $padding-tablet + 87px;
+    min-height: 872px;
+
+    @media (min-resolution: 2dppx){
+      background: url("../img/other/index-can-tablet@2x.jpg") bottom no-repeat;
+      background-size: 709px 609px;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    padding-left: $padding-desktop + 80px;
+    padding-right: $padding-desktop;
+    background:
+      url("../img/other/index-can-desktop@1x.png") 63% center no-repeat,
+      url("../img/other/index-background-desktop@1x.jpg") right top no-repeat;
+    background-size: auto, 720px 694px;
+    min-height: 776px;
+
+    @media (min-resolution: 2dppx){
+      background:
+        url("../img/other/index-can-desktop@2x.png") 63% no-repeat,
+        url("../img/other/index-background-desktop@2x.jpg") right top no-repeat;
+      background-size: 552px 499px, 720px 694px;
+    }
+  }
+}
+
+.intro__header{
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $text-white;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width){
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: $text-black;
+    padding-top: 62px;
+    padding-right: 150px;
+    padding-left: 0;
+    padding-bottom: 42px;
+    text-align: left;
+    max-width: none;
+  }
+
+  @media (min-width: $desktop-width){
+    padding-right: 53%;
+    padding-top: 223px;
+  }
+}
+
+.intro__text{
+  margin: 0;
+  padding: 0;
+  color: $text-white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width){
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: $text-black;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}
+
+.intro__link{
+  background-color: $basic-green;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $text-white;
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 302px;
+
+  &:hover{
+    background-color: $basic-green-2;
+  }
+
+  &:active{
+    color: rgba($text-white, 0.3);
+  }
+
+  @media (min-width: $tablet-width){
+    font-weight: normal;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 244px;
+    margin-top: 48px;
+    margin-left: -5px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
