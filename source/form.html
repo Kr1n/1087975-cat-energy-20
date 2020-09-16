@@ -41,91 +41,93 @@
   </header>
 
   <main class="page__main">
-    <h1 class="page__header">Подбор программы</h1>
+    <div class="container">
+      <h1 class="page__header">Подбор программы</h1>
 
-    <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-      <h2 class="form__header">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
-      <div class="grid-2-col">
-        <fieldset class="form__fieldset form__fieldset--general">
-          <div class="form__wrapper">
-            <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input" type="text" id="name" name="name" placeholder="Барсик" required>
-          </div>
-          <div class="form__wrapper">
-            <label class="form__label" for="weight">Вес (кг):*</label>
-            <input class="form__input" type="text" id="weight" name="weight" placeholder="7" required>
-          </div>
-          <div class="form__wrapper">
-            <label class="form__label" for="age">Возраст (лет):</label>
-            <input class="form__input" type="text" id="age" name="age" placeholder="7" required>
-          </div>
-        </fieldset>
-
-        <fieldset class="form__fieldset form__fieldset--service">
-          <div class="form__fieldset-border">
-            <div class="form__wrapper">
-              <input class="visually-hidden" type="radio" id="slimming" name="service" value="slimming" checked>
-              <label class="form__label" for="slimming" tabindex="0">Похудение</label>
-            </div>
-            <div class="form__wrapper">
-              <input class="visually-hidden" type="radio" id="fatting" name="service" value="fatting">
-              <label class="form__label" for="fatting" tabindex="0">Набор массы</label>
-            </div>
-            <div class="form__wrapper">
-              <input class="visually-hidden" type="radio" id="other" name="service" value="other">
-              <label class="form__label" for="other" tabindex="0">Не знаю (Нужен ваш совет)</label>
-            </div>
-          </div>
-        </fieldset>
-      </div>
-
-      <fieldset class="form__fieldset form__fieldset--contact">
-        <h3 class="form__descrition">Контактные данные (владельца кота)</h3>
+      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+        <h2 class="form__header">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
         <div class="grid-2-col">
-          <div class="form__wrapper">
-            <label class="form__label" for="email">E-mail:*</label>
-            <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
-            <svg class="form__input-icon form__input-icon--email" width="20" height="14">
-              <use xlink:href="img/sprite.svg#icon-mail"/>
-            </svg>
-          </div>
-          <div class="form__wrapper">
-            <label class="form__label" for="phone">Телефон:*</label>
-            <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
-            <svg class="form__input-icon form__input-icon--phone" width="20" height="20">
-              <use xlink:href="img/sprite.svg#icon-phone"/>
-            </svg>
-          </div>
+          <fieldset class="form__fieldset form__fieldset--general">
+            <div class="form__wrapper">
+              <label class="form__label" for="name">Имя:*</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Барсик" required>
+            </div>
+            <div class="form__wrapper">
+              <label class="form__label" for="weight">Вес (кг):*</label>
+              <input class="form__input" type="text" id="weight" name="weight" placeholder="7" required>
+            </div>
+            <div class="form__wrapper">
+              <label class="form__label" for="age">Возраст (лет):</label>
+              <input class="form__input" type="text" id="age" name="age" placeholder="7" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--service">
+            <div class="form__fieldset-border">
+              <div class="form__wrapper">
+                <input class="visually-hidden" type="radio" id="slimming" name="service" value="slimming" checked>
+                <label class="form__label" for="slimming" tabindex="0">Похудение</label>
+              </div>
+              <div class="form__wrapper">
+                <input class="visually-hidden" type="radio" id="fatting" name="service" value="fatting">
+                <label class="form__label" for="fatting" tabindex="0">Набор массы</label>
+              </div>
+              <div class="form__wrapper">
+                <input class="visually-hidden" type="radio" id="other" name="service" value="other">
+                <label class="form__label" for="other" tabindex="0">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </div>
+          </fieldset>
         </div>
-      </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--comment">
-        <h3 class="form__descrition">Комментарий</h3>
-        <textarea class="form__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
-      </fieldset>
+        <fieldset class="form__fieldset form__fieldset--contact">
+          <h3 class="form__descrition">Контактные данные (владельца кота)</h3>
+          <div class="grid-2-col">
+            <div class="form__wrapper">
+              <label class="form__label" for="email">E-mail:*</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <svg class="form__input-icon form__input-icon--email" width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-mail"/>
+              </svg>
+            </div>
+            <div class="form__wrapper">
+              <label class="form__label" for="phone">Телефон:*</label>
+              <input class="form__input form__input--phone" type="text" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="form__input-icon form__input-icon--phone" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-phone"/>
+              </svg>
+            </div>
+          </div>
+        </fieldset>
 
-      <fieldset class="form__fieldset form__fieldset--addition">
-        <h3 class="form__descrition">Дополнительно</h3>
-        <div class="form__wrapper">
-          <input class="visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
-          <label class="form__label" for="sugar" tabindex="0">Сахарозаменитель</label>
+        <fieldset class="form__fieldset form__fieldset--comment">
+          <h3 class="form__descrition">Комментарий</h3>
+          <textarea class="form__textarea" id="comment" name="comment" placeholder="Расскажите обо всех повАдках кота"></textarea>
+        </fieldset>
 
-          <input class="visually-hidden" type="checkbox" id="water" name="water">
-          <label class="form__label" for="water" tabindex="0">Питьевая вода</label>
+        <fieldset class="form__fieldset form__fieldset--addition">
+          <h3 class="form__descrition">Дополнительно</h3>
+          <div class="form__wrapper">
+            <input class="visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
+            <label class="form__label" for="sugar" tabindex="0">Сахарозаменитель</label>
 
-          <input class="visually-hidden" type="checkbox" id="milk" name="milk">
-          <label class="form__label" for="milk" tabindex="0">Молоко</label>
+            <input class="visually-hidden" type="checkbox" id="water" name="water">
+            <label class="form__label" for="water" tabindex="0">Питьевая вода</label>
 
-          <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-          <label class="form__label" for="vitamins" tabindex="0">Витамины</label>
+            <input class="visually-hidden" type="checkbox" id="milk" name="milk">
+            <label class="form__label" for="milk" tabindex="0">Молоко</label>
+
+            <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+            <label class="form__label" for="vitamins" tabindex="0">Витамины</label>
+          </div>
+        </fieldset>
+
+        <div class="form__submit-wrapper">
+          <button class="form__submit">Отправить заявку</button>
+          <p class="form__legend">* — Обязательные поля</p>
         </div>
-      </fieldset>
-
-      <div class="form__submit-wrapper">
-        <button class="form__submit">Отправить заявку</button>
-        <p class="form__legend">* — Обязательные поля</p>
-      </div>
-    </form>
+      </form>
+    </div>
 
     <section class="contacts contacts--grey">
       <div class="contacts__wrapper">
@@ -140,48 +142,52 @@
     </section>
   </main>
 
-  <footer class="page__footer footer">
-    <a class="footer__logo" href="index.html">
-      <img class="footer__logo-img" width="128" height="24" alt="Логотип" src="img/svg/logo-footer.svg"/>
-    </a>
-    <div class="footer__socials socials">
-      <ul class="socials__list">
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <span class="visually-hidden">VK</span>
-            <svg class="socials__img socials__img--vk" width="23" height="16">
-              <use xlink:href="img/sprite.svg#icon-vk"/>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <span class="visually-hidden">Instagram</span>
-            <svg class="socials__img socials__img--insta" width="16" height="16">
-              <use xlink:href="img/sprite.svg#icon-insta"/>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="#" class="socials__link">
-            <span class="visually-hidden">Facebook</span>
-            <svg class="socials__img socials__img--fb" width="22" height="22">
-              <use xlink:href="img/sprite.svg#icon-fb"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="copyright__text">HTML Academy</p>
-        <div class="copyright__image">
-          <span class="visually-hidden">https://htmlacademy.ru/</span>
-          <svg width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-htmlacademy"/>
-          </svg>
+  <footer class="page__footer">
+    <div class="container">
+      <div class="footer">
+        <a class="footer__logo">
+          <img class="footer__logo-img" width="128" height="24" alt="Логотип" src="img/svg/logo-footer.svg"/>
+        </a>
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">VK</span>
+                <svg class="socials__img socials__img--vk" width="23" height="16">
+                  <use xlink:href="img/sprite.svg#icon-vk"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Instagram</span>
+                <svg class="socials__img socials__img--insta" width="16" height="16">
+                  <use xlink:href="img/sprite.svg#icon-insta"/>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="socials__img socials__img--fb" width="22" height="22">
+                  <use xlink:href="img/sprite.svg#icon-fb"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-      </a>
+        <div class="footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">HTML Academy</p>
+            <div class="copyright__image">
+              <span class="visually-hidden">https://htmlacademy.ru/</span>
+              <svg width="27" height="34">
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
   <script src="js/script.min.js"></script>

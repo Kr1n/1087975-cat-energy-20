@@ -43,6 +43,7 @@
     top: 95px;
     left: 110px;
     gap: 50px;
+    transform: translateX(calc((-1440px + 100vw) / 2));
   }
 }
 

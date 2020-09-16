@@ -17,6 +17,7 @@
     padding-right: $padding-desktop;
     padding-bottom: 86px;
     margin-top: 48px;
+    overflow: unset;
   }
 }
 
@@ -60,6 +61,14 @@
     padding-left: 40px;
     padding-right: 35px;
     margin-left: -40px;
+
+    &::after{
+      top: 48px;
+      width: 100vw;
+      transform: translateX(calc((1440px - 100vw) / 2));
+      right: auto;
+      left: 0;
+    }
   }
 }
 

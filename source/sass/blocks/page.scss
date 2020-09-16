@@ -2,10 +2,11 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   position: relative;
-  overflow-x: hidden;
 }
 
 .page__body{
+  overflow-x: hidden;
+
   @media (min-width: $desktop-width){
     margin-left: auto;
     margin-right: auto;
@@ -46,4 +47,10 @@
 
 .page__footer{
   background-color: $basic-grey;
+}
+
+.page__main{
+  @media (min-width: $desktop-width){
+    overflow-x: hidden;
+  }
 }

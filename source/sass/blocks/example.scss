@@ -8,9 +8,15 @@
       height: 462px;
       background-color: $background-example;
       left: 0;
-      top: 180px;
+      top: 619px;
       width: 100vw;
       z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width){
+    &::before{
+      top: 180px;
     }
   }
 }

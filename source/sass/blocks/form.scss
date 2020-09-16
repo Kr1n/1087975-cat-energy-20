@@ -387,13 +387,30 @@
 
     .form__fieldset--contact &{
       &::after{
+        width: 100vw;
         top: 40px;
+        transform: translateX(calc((1440px - 100vw) / 2));
+        right: auto;
+        left: 0;
       }
     }
 
     .form__fieldset--comment &{
       &::after{
+        width: 100vw;
         top: 40px;
+        transform: translateX(calc((1440px - 100vw) / 2));
+        right: auto;
+        left: 0;
+      }
+    }
+
+    .form__fieldset--addition &{
+      &::after{
+        width: 100vw;
+        transform: translateX(calc((1440px - 100vw) / 2));
+        right: auto;
+        left: 0;
       }
     }
   }

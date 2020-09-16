@@ -136,5 +136,5 @@ exports.build = gulp.series(
 );
 
 exports.default = gulp.series(
-  exports.build, server, watcher
+  exports.build, server
 );
