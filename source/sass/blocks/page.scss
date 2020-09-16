@@ -5,6 +5,13 @@
   overflow-x: hidden;
 }
 
+.page__body{
+  @media (min-width: $desktop-width){
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .page__header{
   margin: 0;
   padding: 0;
@@ -37,12 +44,6 @@
   }
 }
 
-.page__main{
-  overflow-x: hidden;
-
-  @media (min-width: $desktop-width){
-    max-width: $max-width;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.page__footer{
+  background-color: $basic-grey;
 }

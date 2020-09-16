@@ -49,6 +49,8 @@
 
 .main-nav--nojs{
   @media (max-width: $tablet-width - 1px){
+    padding-top: 65px;
+
     & .main-nav__toggle{
       display: none;
     }

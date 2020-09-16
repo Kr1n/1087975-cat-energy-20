@@ -13,16 +13,16 @@ const imagemin = require("gulp-imagemin");
 const createwebp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const uglify = require('gulp-uglify');
+const uglify = require("gulp-uglify");
 
-const htmlmin = require('gulp-htmlmin');
+const htmlmin = require("gulp-htmlmin");
 
 // HTML mini
 
 const html = () => {
-  return gulp.src('source/*.html')
+  return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"));
 };
 
 // Clean
@@ -100,7 +100,7 @@ exports.styles = styles;
 // JS compress
 
 const compress = () => {
-  return gulp.src('source/js/*.js')
+  return gulp.src("source/js/*.js")
   .pipe(uglify())
   .pipe(rename("script.min.js"))
   .pipe(gulp.dest("build/js/"))
@@ -113,7 +113,7 @@ exports.compress = compress;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -136,5 +136,5 @@ exports.build = gulp.series(
 );
 
 exports.default = gulp.series(
-  styles, html, server, watcher
+  exports.build, server, watcher
 );

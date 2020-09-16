@@ -1,6 +1,14 @@
-.intro{
+.intro {
+  @media (min-width: $desktop-width){
+    background-image: linear-gradient(to right, $text-white 50%, $intro-bg-color 50%);
+    margin-bottom: 82px;
+  }
+}
+
+.intro__content{
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
+  position: relative;
   background:
     url("../img/other/index-can-mobile@1x.png") center 166px no-repeat,
     url("../img/other/index-background-mobile@1x.jpg") center top no-repeat;
@@ -29,17 +37,39 @@
   @media (min-width: $desktop-width){
     padding-left: $padding-desktop + 80px;
     padding-right: $padding-desktop;
-    background:
-      url("../img/other/index-can-desktop@1x.png") 63% center no-repeat,
-      url("../img/other/index-background-desktop@1x.jpg") right top no-repeat;
-    background-size: auto, 720px 694px;
-    min-height: 776px;
+    min-height: 694px;
+    background: none;
+
+    &::before {
+      content: '';
+      width: 50%;
+      height: 100%;
+      background: url("../img/other/index-background-desktop@1x.jpg") right top no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: url("../img/other/index-can-desktop@1x.png") 63% 73% no-repeat;
+      background-size: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
     @media (min-resolution: 2dppx){
-      background:
-        url("../img/other/index-can-desktop@2x.png") 63% no-repeat,
-        url("../img/other/index-background-desktop@2x.jpg") right top no-repeat;
-      background-size: 552px 499px, 720px 694px;
+      background: url("../img/other/index-can-desktop@2x.png") 63% no-repeat;
+      background-size: 552px 499px;
+
+      &::before {
+        background: url("../img/other/index-background-desktop@1x.jpg") right top no-repeat;
+        background-size: cover;
+      }
     }
   }
 }

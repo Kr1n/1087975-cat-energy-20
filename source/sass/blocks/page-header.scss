@@ -18,6 +18,7 @@
     padding-left: $padding-desktop;
     padding-right: $padding-desktop;
     width: 100%;
+    z-index: 1;
 
     .home &{
       position: absolute;

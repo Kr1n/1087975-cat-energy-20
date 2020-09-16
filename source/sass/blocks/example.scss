@@ -1,4 +1,21 @@
 .example{
+  @media (min-width: $tablet-width){
+    position: relative;
+
+    &::before{
+      content: "";
+      position: absolute;
+      height: 462px;
+      background-color: $background-example;
+      left: 0;
+      top: 180px;
+      width: 100vw;
+      z-index: -1;
+    }
+  }
+}
+
+.example__content{
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
   padding-top: 27px;
@@ -137,18 +154,6 @@
     flex-direction: column;
     margin-left: 0;
     margin-right: 0;
-
-    &::before{
-      content: "";
-      position: absolute;
-      height: 462px;
-      background-color: $background-example;
-      left: 0;
-      width: 100vw;
-      z-index: -1;
-      margin-left: -$padding-tablet;
-      margin-right: -$padding-tablet;
-    }
   }
 
   @media (min-width: $desktop-width){

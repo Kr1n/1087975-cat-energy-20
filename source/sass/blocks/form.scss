@@ -260,6 +260,14 @@
 
       &--phone{
         padding-left: 17px;
+
+        &:active{
+          padding-left: 16px;
+        }
+
+        &:focus{
+          padding-left: 16px;
+        }
       }
     }
 
